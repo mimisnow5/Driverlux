@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>405</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QWidget" name="barra_titulo" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(236, 236, 236);</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="logo">
+         <property name="minimumSize">
+          <size>
+           <width>23</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>ICONOS/logo.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="titulo">
+         <property name="minimumSize">
+          <size>
+           <width>25</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Drivers &amp; Dispositivos </string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <spacer name="espacio_BT">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>158</width>
+           <height>22</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="minimizar">
+         <property name="styleSheet">
+          <string notr="true">min-width: 20px;
+max-width: 20px;
+min-height: 20px;
+max-height: 20px;
+
+border: none;
+backgroud: transparent;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/icons/ICONOS/Minimizar.png</normaloff>:/icons/ICONOS/Minimizar.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>10</width>
+           <height>16</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QPushButton" name="agrandar">
+         <property name="styleSheet">
+          <string notr="true">min-width: 15px;
+max-width: 15px;
+min-height: 15px;
+max-height: 15px;
+
+border: none;
+backgroud: transparent;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/icons/ICONOS/rombo.png</normaloff>:/icons/ICONOS/rombo.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>16</width>
+           <height>12</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QPushButton" name="cerrar">
+         <property name="styleSheet">
+          <string notr="true">min-width: 20px;
+max-width: 20px;
+min-height: 20px;
+max-height: 20px;
+
+border: none;
+backgroud: transparent;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/icons/ICONOS/cerrar.png</normaloff>:/icons/ICONOS/cerrar.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>8</width>
+           <height>16</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QWidget" name="Contenido" native="true">
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: transparent;
+
+background-color: rgb(223, 223, 223);</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>12</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="ILado_Bar">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>220</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>220</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(236, 236, 236);
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>14</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btn_inicio">
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    text-align: center; 
+    padding-left: 0px;  
+}
+
+QPushButton:hover {
+    color: #0087ff;
+    background-color: rgba(0, 135, 255, 0.1); 
+    border-radius: 4px;
+}</string>
+            </property>
+            <property name="text">
+             <string>   Inicio</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>ICONOS/home.svg</normaloff>ICONOS/home.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_drivers">
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+QPushButton:hover {
+    color: #0087ff;
+    background-color: rgba(0, 135, 255, 0.1); 
+    border-radius: 4px;
+}</string>
+            </property>
+            <property name="text">
+             <string>   Drivers</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>ICONOS/drivers.svg</normaloff>ICONOS/drivers.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>18</width>
+              <height>18</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_diagnostico">
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+QPushButton:hover {
+    color: #0087ff;
+    background-color: rgba(0, 135, 255, 0.1); 
+    border-radius: 4px;
+}</string>
+            </property>
+            <property name="text">
+             <string>   Diagnóstico</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>ICONOS/diagnostico1.svg</normaloff>ICONOS/diagnostico1.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>18</width>
+              <height>22</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_actualizardrivers">
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+QPushButton:hover {
+    color: #0087ff;
+    background-color: rgba(0, 135, 255, 0.1); 
+    border-radius: 4px;
+}</string>
+            </property>
+            <property name="text">
+             <string>   Actualizar Drivers</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>ICONOS/actualizar_drivers.svg</normaloff>ICONOS/actualizar_drivers.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>18</width>
+              <height>28</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_busquedaWeb">
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+QPushButton:hover {
+    color: #0087ff;
+    background-color: rgba(0, 135, 255, 0.1); 
+    border-radius: 4px;
+}</string>
+            </property>
+            <property name="text">
+             <string>   Búsqueda Web </string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>ICONOS/Busqueda_internet.svg</normaloff>ICONOS/Busqueda_internet.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>22</width>
+              <height>22</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_ajustes">
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+QPushButton:hover {
+    color: #0087ff;
+    background-color: rgba(0, 135, 255, 0.1); 
+    border-radius: 4px;
+}</string>
+            </property>
+            <property name="text">
+             <string>   Ajustes</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>ICONOS/ajustes.svg</normaloff>ICONOS/ajustes.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="espacio_LDB">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QFrame" name="Sistema_operativo">
+            <property name="minimumSize">
+             <size>
+              <width>90</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-top-color: rgb(106, 106, 106);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Shadow::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QLabel" name="lbl_sistema_titulo">
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    font-weight: bold;      
+    qproperty-alignment: 'AlignCenter'; 
+}</string>
+               </property>
+               <property name="text">
+                <string>Sistema</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lbl_kernel">
+               <property name="text">
+                <string>Esperando Sistema.....</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lbl_distro">
+               <property name="text">
+                <string>Esperando Sistema.....</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+            <zorder>lbl_distro</zorder>
+            <zorder>lbl_sistema_titulo</zorder>
+            <zorder>lbl_kernel</zorder>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="DLa_Bar">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>500</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(236, 236, 236);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QStackedWidget" name="stackedWidget">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::NoFrame</enum>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="pag_inicio">
+             <layout class="QGridLayout" name="gridLayout_3">
+              <item row="9" column="0">
+               <widget class="QLabel" name="lbl_red">
+                <property name="text">
+                 <string>Esperando Sistema.....</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="texto">
+                <property name="text">
+                 <string>Bienvenidos</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="texto2">
+                <property name="text">
+                 <string>esto es solamente una prueba de drivelux </string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QListWidget" name="lista_drivers"/>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="pag_drivers">
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label">
+                <property name="text">
+                 <string>Informacion de sus drivers </string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+  <include location="../../.designer/backup/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

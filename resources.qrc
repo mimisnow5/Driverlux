@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="/icons">
+    <file>ICONOS/ajustes.svg</file>
+    <file>ICONOS/Busqueda_internet.svg</file>
+    <file>ICONOS/actualizar_drivers.svg</file>
+    <file>ICONOS/diagnostico.svg</file>
+    <file>ICONOS/drivers.svg</file>
+    <file>ICONOS/rombo.png</file>
+    <file>ICONOS/home_azul.svg</file>
+    <file>ICONOS/home.svg</file>
+    <file>ICONOS/logo.png</file>
+    <file>ICONOS/cerrar.png</file>
+    <file>ICONOS/Minimizar.png</file>
+  </qresource>
+</RCC>
