@@ -11,8 +11,10 @@ def detectar_hardware():
         lineas = resultado.stdout.splitlines()
 
         #lista vacia donde se guardaran los diccionarios:
+        
+        categorias = {"VGA": "gpu", "Network": "red", "Audio": "audio", "USB": "usb", "Multimedia": "multimedia"}
 
-        dispositivos = []
+        dispositivos = {"gpu": [], "red": [], "audio": [], "usb": [], "multimedia": []}
         #diccionario vacio donde se guardará los dispositivos:
 
         dispositivo_actual = None
@@ -25,7 +27,10 @@ def detectar_hardware():
                 if tipo in linea:
                     nombre = linea.split(":")[-1].strip()
                     dispositivo_actual = {"tipo": tipo, "nombre": nombre, "driver": "Sin driver"}
-                    dispositivos.append(dispositivo_actual)
+                    
+                    categoria = categorias[tipo]
+
+                    dispositivos[categoria].append(dispositivo_actual)
             if "Kernel driver in use:" in linea:
                 if dispositivo_actual:
                     driver = linea.split(":")[-1].strip()
