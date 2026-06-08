@@ -13,10 +13,15 @@ class Drivelux(QMainWindow):
         super().__init__()
         
         uic.loadUi("drivelux.ui", self)
-        
-        # Fuerza que inicie en la página 0 del stackedWidget
-        self.stackedWidget.setCurrentIndex(0)
-        
+        self.stackedWidget.setCurrentIndex(0) #Fuerza que inicie en la página 0 del stackedWidget
+
+        self.btn_inicio.clicked.connect(lambda: self.stackedWidget.setCurrentIndex(0))
+        self.btn_drivers.clicked.connect(lambda: self.stackedWidget.setCurrentIndex(1))
+        self.btn_diagnostico.clicked.connect(lambda: self.stackedWidget.setCurrentIndex(2))
+        self.btn_actualizardrivers.clicked.connect(lambda: self.stackedWidget.setCurrentIndex(3))
+        self.btn_busquedaWeb.clicked.connect(lambda: self.stackedWidget.setCurrentIndex(4))
+        self.btn_ajustes.clicked.connect(lambda: self.stackedWidget.setCurrentIndex(5))
+
         # Ejecuta la carga de datos
         self.mostrar_info()
 

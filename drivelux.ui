@@ -6,16 +6,31 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>750</width>
-    <height>405</height>
+    <width>760</width>
+    <height>540</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QFormLayout" name="formLayout">
-    <item row="0" column="0">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
      <widget class="QWidget" name="barra_titulo" native="true">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
@@ -23,11 +38,23 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
+      <property name="minimumSize">
+       <size>
+        <width>20</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(236, 236, 236);</string>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
-       <item row="0" column="0">
+       <item row="1" column="0">
         <widget class="QLabel" name="logo">
          <property name="minimumSize">
           <size>
@@ -52,7 +79,7 @@
          </property>
         </widget>
        </item>
-       <item row="0" column="1">
+       <item row="1" column="1">
         <widget class="QLabel" name="titulo">
          <property name="minimumSize">
           <size>
@@ -70,101 +97,23 @@
          </property>
         </widget>
        </item>
-       <item row="0" column="2">
+       <item row="1" column="2">
         <spacer name="espacio_BT">
          <property name="orientation">
           <enum>Qt::Orientation::Horizontal</enum>
          </property>
          <property name="sizeHint" stdset="0">
           <size>
-           <width>158</width>
-           <height>22</height>
+           <width>22</width>
+           <height>20</height>
           </size>
          </property>
         </spacer>
        </item>
-       <item row="0" column="3">
-        <widget class="QPushButton" name="minimizar">
-         <property name="styleSheet">
-          <string notr="true">min-width: 20px;
-max-width: 20px;
-min-height: 20px;
-max-height: 20px;
-
-border: none;
-backgroud: transparent;</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset>
-           <normaloff>:/icons/ICONOS/Minimizar.png</normaloff>:/icons/ICONOS/Minimizar.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>10</width>
-           <height>16</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="4">
-        <widget class="QPushButton" name="agrandar">
-         <property name="styleSheet">
-          <string notr="true">min-width: 15px;
-max-width: 15px;
-min-height: 15px;
-max-height: 15px;
-
-border: none;
-backgroud: transparent;</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset>
-           <normaloff>:/icons/ICONOS/rombo.png</normaloff>:/icons/ICONOS/rombo.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>16</width>
-           <height>12</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="5">
-        <widget class="QPushButton" name="cerrar">
-         <property name="styleSheet">
-          <string notr="true">min-width: 20px;
-max-width: 20px;
-min-height: 20px;
-max-height: 20px;
-
-border: none;
-backgroud: transparent;</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset>
-           <normaloff>:/icons/ICONOS/cerrar.png</normaloff>:/icons/ICONOS/cerrar.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>8</width>
-           <height>16</height>
-          </size>
-         </property>
-        </widget>
-       </item>
       </layout>
      </widget>
     </item>
-    <item row="1" column="0">
+    <item>
      <widget class="QWidget" name="Contenido" native="true">
       <property name="styleSheet">
        <string notr="true">border: none;
@@ -198,13 +147,13 @@ background-color: rgb(223, 223, 223);</string>
          </property>
          <property name="minimumSize">
           <size>
-           <width>220</width>
+           <width>200</width>
            <height>0</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>220</width>
+           <width>230</width>
            <height>16777215</height>
           </size>
          </property>
@@ -230,19 +179,25 @@ background-color: rgb(223, 223, 223);</string>
               <pointsize>11</pointsize>
              </font>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Inicio&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">QPushButton {
     background-color: transparent;
     color: #000000;
     border: none;
-    text-align: center; 
-    padding-left: 0px;  
+    text-align: left; 
+	qproperty-iconSize: 20px 20px;
+    padding-left: 15px;  
+	spacing: 12px;
 }
 
 QPushButton:hover {
     color: #0087ff;
     background-color: rgba(0, 135, 255, 0.1); 
     border-radius: 4px;
+	qproperty-icon: url(&quot;:/icons/ICONOS/home_azul.svg&quot;);
 }</string>
             </property>
             <property name="text">
@@ -272,9 +227,10 @@ QPushButton:hover {
     background-color: transparent;
     color: #000000;
     border: none;
-    text-align: center;
-    padding-left: 0px;
-    padding-right: 0px;
+    text-align: left; 
+	qproperty-iconSize: 20px 20px;
+    padding-left: 15px;  
+	spacing: 12px;
 }
 
 QPushButton:hover {
@@ -292,8 +248,8 @@ QPushButton:hover {
             </property>
             <property name="iconSize">
              <size>
-              <width>18</width>
-              <height>18</height>
+              <width>20</width>
+              <height>20</height>
              </size>
             </property>
            </widget>
@@ -310,9 +266,10 @@ QPushButton:hover {
     background-color: transparent;
     color: #000000;
     border: none;
-    text-align: center;
-    padding-left: 0px;
-    padding-right: 0px;
+    text-align: left; 
+	qproperty-iconSize: 20px 20px;
+    padding-left: 15px;  
+	spacing: 12px;
 }
 
 QPushButton:hover {
@@ -330,8 +287,8 @@ QPushButton:hover {
             </property>
             <property name="iconSize">
              <size>
-              <width>18</width>
-              <height>22</height>
+              <width>20</width>
+              <height>20</height>
              </size>
             </property>
            </widget>
@@ -348,9 +305,10 @@ QPushButton:hover {
     background-color: transparent;
     color: #000000;
     border: none;
-    text-align: center;
-    padding-left: 0px;
-    padding-right: 0px;
+    text-align: left; 
+	qproperty-iconSize: 20px 20px;
+    padding-left: 15px;  
+	spacing: 12px;
 }
 
 QPushButton:hover {
@@ -368,8 +326,8 @@ QPushButton:hover {
             </property>
             <property name="iconSize">
              <size>
-              <width>18</width>
-              <height>28</height>
+              <width>20</width>
+              <height>20</height>
              </size>
             </property>
            </widget>
@@ -386,9 +344,10 @@ QPushButton:hover {
     background-color: transparent;
     color: #000000;
     border: none;
-    text-align: center;
-    padding-left: 0px;
-    padding-right: 0px;
+    text-align: left; 
+	qproperty-iconSize: 20px 20px;
+    padding-left: 15px;  
+	spacing: 12px;
 }
 
 QPushButton:hover {
@@ -406,8 +365,8 @@ QPushButton:hover {
             </property>
             <property name="iconSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>20</width>
+              <height>20</height>
              </size>
             </property>
            </widget>
@@ -424,9 +383,10 @@ QPushButton:hover {
     background-color: transparent;
     color: #000000;
     border: none;
-    text-align: center;
-    padding-left: 0px;
-    padding-right: 0px;
+    text-align: left; 
+	qproperty-iconSize: 20px 20px;
+    padding-left: 15px;  
+	spacing: 12px;
 }
 
 QPushButton:hover {
@@ -472,7 +432,9 @@ QPushButton:hover {
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">border-top-color: rgb(106, 106, 106);</string>
+             <string notr="true">border-top-color: rgb(106, 106, 106);
+
+</string>
             </property>
             <property name="frameShape">
              <enum>QFrame::Shape::StyledPanel</enum>
@@ -559,46 +521,430 @@ QPushButton:hover {
              <enum>QFrame::Shape::NoFrame</enum>
             </property>
             <property name="currentIndex">
-             <number>0</number>
+             <number>2</number>
             </property>
-            <widget class="QWidget" name="pag_inicio">
-             <layout class="QGridLayout" name="gridLayout_3">
-              <item row="9" column="0">
-               <widget class="QLabel" name="lbl_red">
-                <property name="text">
-                 <string>Esperando Sistema.....</string>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="0">
+            <widget class="QWidget" name="page_inicio">
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
                <widget class="QLabel" name="texto">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
                 <property name="text">
-                 <string>Bienvenidos</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Bienvenido&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                </widget>
               </item>
-              <item row="1" column="0">
+              <item>
                <widget class="QLabel" name="texto2">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
                 <property name="text">
-                 <string>esto es solamente una prueba de drivelux </string>
+                 <string>Administra, diagnostica y actualiza los drivers de tu sistema.</string>
                 </property>
                </widget>
               </item>
-              <item row="4" column="0">
-               <widget class="QListWidget" name="lista_drivers"/>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout">
+                <item>
+                 <widget class="QLabel" name="label_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>230</width>
+                    <height>260</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap>ICONOS/Logo_inicio.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_6">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>312</width>
+                    <height>270</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;¡Hola, mundo! Somos el equipo detrás de este invento.&lt;/p&gt;&lt;p&gt;Somos un grupo de estudiantes de undécimo año sobreviviendo a punta de código, entregas de proyectos y exámenes. Decidimos canalizar todo ese estrés creando este software que ves aquí.&lt;/p&gt;&lt;p&gt;Mantener los ojos abiertos para programar, testear y solucionar bugs requiere una cantidad industrial de cafeína (y tal vez un par de empanadas). Si te gusta lo que hacemos, si te ahorró un dolor de cabeza, o si simplemente nos tienes compasión como estudiantes de cole técnico, ¡invítanos a un café! &lt;/p&gt;&lt;p&gt;Cualquier donación mantiene vivas nuestras neuronas y aleja las pantallas azules de la muerte. ¡Gracias por el aguante!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
               </item>
              </layout>
             </widget>
-            <widget class="QWidget" name="pag_drivers">
-             <layout class="QGridLayout" name="gridLayout_4">
-              <item row="0" column="0">
-               <widget class="QLabel" name="label">
-                <property name="text">
-                 <string>Informacion de sus drivers </string>
-                </property>
-               </widget>
-              </item>
-             </layout>
+            <widget class="QWidget" name="page_drivers">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <widget class="QLabel" name="titulo_pag2">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>161</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="whatsThis">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Drivers instalados&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Drivers instalados&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+             <widget class="QWidget" name="layoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>40</y>
+                <width>531</width>
+                <height>411</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <item>
+                <widget class="QFrame" name="frame">
+                 <property name="frameShape">
+                  <enum>QFrame::Shape::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Shadow::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_3">
+                  <item>
+                   <spacer name="horizontalSpacer">
+                    <property name="orientation">
+                     <enum>Qt::Orientation::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>230</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="dri_busqueda">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">
+QLineEdit {
+    border: 2px solid #ffffff;       
+    border-radius: 4px;
+    background-color: #1e1e2e;       
+    color: #ffffff;               
+    padding: 6px 10px;
+}
+
+QLineEdit:hover {
+    border: 2px solid #70a1ff;      
+    background-color: #26263b;       
+    color: #ffffff;                
+}
+
+QLineEdit:focus {
+    border: 2px solid #79ffc3;       
+    background-color: #2b2b3d;      
+    color: #ffffff;               
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset>
+                      <normaloff>ICONOS/búsqueda.apng.png</normaloff>ICONOS/búsqueda.apng.png</iconset>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QListWidget" name="lista_drivers">
+                 <property name="minimumSize">
+                  <size>
+                   <width>220</width>
+                   <height>250</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="page_diagnostico">
+             <widget class="QPushButton" name="btn_insdri">
+              <property name="geometry">
+               <rect>
+                <x>40</x>
+                <y>220</y>
+                <width>391</width>
+                <height>61</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #3498db; 
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 6px 14px;
+}
+
+QPushButton:hover {
+    background-color: #70a1ff; 
+}
+
+QPushButton:pressed {
+    background-color: #79ffc3; 
+    color: #000000;     
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>ICONOS/búsqueda.apng.png</normaloff>ICONOS/búsqueda.apng.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>80</width>
+                <height>80</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>20</y>
+                <width>111</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>320</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Diagnostico&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_7">
+              <property name="geometry">
+               <rect>
+                <x>40</x>
+                <y>70</y>
+                <width>351</width>
+                <height>131</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pruebe nuestre herramienta&lt;/p&gt;&lt;p&gt;de instalacion de drivers&lt;br/&gt;&lt;br/&gt;(esto es una beta)&lt;/p&gt;&lt;p&gt;presione aqui &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="page_actdri">
+             <widget class="QLabel" name="label_3">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>20</y>
+                <width>211</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Actualizacion de Drivers&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="btn_actdri">
+              <property name="geometry">
+               <rect>
+                <x>170</x>
+                <y>80</y>
+                <width>141</width>
+                <height>121</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #bdffe7; 
+	color: rgb(189, 255, 231);
+    border: none;
+    border-radius: 4px;
+    color: #000000;
+    font-weight: bold;
+    padding: 6px 14px;
+}
+
+QPushButton:hover {
+    background-color: #69dcff; 
+	color: #0000000;
+}
+
+QPushButton:pressed {
+    background-color: #79ffc3; 
+    color: #000000;            
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>ICONOS/actualizar_drivers.svg</normaloff>ICONOS/actualizar_drivers.svg</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>150</width>
+                <height>150</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_9">
+              <property name="geometry">
+               <rect>
+                <x>140</x>
+                <y>231</y>
+                <width>211</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>boton de actualizacion de drivers</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="page_busquedaweb">
+             <widget class="QLabel" name="label_4">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>40</y>
+                <width>171</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Busqueda en la Web &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButton_2">
+              <property name="geometry">
+               <rect>
+                <x>250</x>
+                <y>130</y>
+                <width>251</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #bdffe7; 
+	color: rgb(189, 255, 231);
+    border: none;
+    border-radius: 4px;
+    color: #000000;
+    font-weight: bold;
+    padding: 6px 14px;
+}
+
+QPushButton:hover {
+    background-color: #69dcff; 
+	color: #0000000;
+}
+
+QPushButton:pressed {
+    background-color: #79ffc3; 
+    color: #000000;            
+}</string>
+              </property>
+              <property name="text">
+               <string>Busque sus drivers..</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_8">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>100</y>
+                <width>211</width>
+                <height>61</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Este boton es capaz de buscar &lt;/p&gt;&lt;p&gt;sus drivers en internet&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="page_ajustes">
+             <widget class="QLabel" name="label_5">
+              <property name="geometry">
+               <rect>
+                <x>80</x>
+                <y>30</y>
+                <width>231</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>pagina de Ajustes </string>
+              </property>
+             </widget>
             </widget>
            </widget>
           </item>
@@ -613,7 +959,6 @@ QPushButton:hover {
  </widget>
  <resources>
   <include location="resources.qrc"/>
-  <include location="../../.designer/backup/resources.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -1,15 +1,15 @@
 <RCC>
   <qresource prefix="/icons">
+    <file>ICONOS/interrogacion.apng.apng</file>
+    <file>ICONOS/búsqueda.apng.png</file>
+    <file>ICONOS/Logo_inicio.png</file>
+    <file>ICONOS/diagnostico1.svg</file>
     <file>ICONOS/ajustes.svg</file>
     <file>ICONOS/Busqueda_internet.svg</file>
     <file>ICONOS/actualizar_drivers.svg</file>
-    <file>ICONOS/diagnostico.svg</file>
     <file>ICONOS/drivers.svg</file>
-    <file>ICONOS/rombo.png</file>
     <file>ICONOS/home_azul.svg</file>
     <file>ICONOS/home.svg</file>
     <file>ICONOS/logo.png</file>
-    <file>ICONOS/cerrar.png</file>
-    <file>ICONOS/Minimizar.png</file>
   </qresource>
 </RCC>
